@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_31_052906) do
+ActiveRecord::Schema.define(version: 2020_01_02_013531) do
 
   create_table "actors", force: :cascade do |t|
     t.string "first_name"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 2019_12_31_052906) do
   create_table "shows", force: :cascade do |t|
     t.string "name"
     t.integer "network_id"
+    t.string "season"
+    t.string "day"
   end
 
 end
